@@ -1,0 +1,15 @@
+fPFA_L7A (60 entries), rawrms: 3.50195, rms90: 2.77686 (84.35-96.35), mean: 90.3083, sigma: 0.293645+-0.0379095, sE/E: 4.34851+-0.561391
+fPFA_0 (4 entries) - skipped
+fPFA_1 (9 entries), rawrms: 3.47985, rms90: 3.47985 (-0.05-98.45), mean: 91.2417, sigma: 0.364221+-0.121407, sE/E: 5.39365+-1.79788
+fPFA_2 (7 entries), rawrms: 4.3312, rms90: 4.3312 (-0.05-96.1), mean: 88.0821, sigma: 0.469589+-0.177488, sE/E: 6.95401+-2.62837
+fPFA_3 (6 entries), rawrms: 3.05292, rms90: 3.05292 (-0.05-96.85), mean: 91.0083, sigma: 0.320355+-0.130784, sE/E: 4.74405+-1.93675
+fPFA_4 (12 entries), rawrms: 3.60088, rms90: 2.99373 (-0.05-96.35), mean: 89.7386, sigma: 0.318589+-0.0919686, sE/E: 4.71789+-1.36194
+fPFA_5 (9 entries), rawrms: 2.79744, rms90: 2.79744 (-0.05-94.95), mean: 90.3806, sigma: 0.295586+-0.0985286, sE/E: 4.37725+-1.45908
+fPFA_6 (13 entries), rawrms: 3.49316, rms90: 2.9648 (84.3-97.1), mean: 91.8625, sigma: 0.308216+-0.0854836, sE/E: 4.56428+-1.2659
+fPFA_7 (16 entries), rawrms: 5.31057, rms90: 4.85865 (-0.05-98.1), mean: 89.395, sigma: 0.519038+-0.12976, sE/E: 7.6863+-1.92157
+fPFA_8 (12 entries), rawrms: 2.79203, rms90: 2.29523 (83.8-94.7), mean: 90.0068, sigma: 0.243527+-0.0703003, sE/E: 3.60633+-1.04106
+fPFA_9 (6 entries), rawrms: 2.0274, rms90: 2.0274 (-0.05-92.15), mean: 88.6583, sigma: 0.218382+-0.0891542, sE/E: 3.23396+-1.32026
+fPFA_10 (4 entries) - skipped
+fPFA_11 (0 entries) - skipped
+fPFA_12 (2 entries) - skipped
+Will write histograms to file : TestingAnalysePerformance.root
