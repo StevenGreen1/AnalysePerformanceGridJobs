@@ -58,7 +58,7 @@ for eventSelection in eventsToSimulate:
 
         job = UserJob()
         job.setJobGroup(JobIdentificationString)
-        job.setInputSandbox(['LFN:/ilc/user/s/sgreen/AnalysePerformanceTarBall/lib.tar.gz']) 
+        job.setInputSandbox(['LFN:/ilc/user/s/sgreen/AnalysePerformanceTarBall/lib.tar.gz', 'runfile.txt']) 
         job.setInputData(rootFilesToProcess)
         job.setOutputData(outputFiles,OutputPath='/OptimisationStudies/AnalysePerformance/Detector_Model_' + str(detModel) + '/Reco_Stage_' + str(recoVar) + '/' + eventType + '/' + str(energy) + 'GeV')
 
