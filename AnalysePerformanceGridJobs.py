@@ -12,7 +12,8 @@ def getRootFiles(jobDescription, detModel, recoVar, energy, eventType, pandoraSe
         lines = f.readlines()
         for idx, line in enumerate(lines):
             line = line.strip()
-            if pandoraSettings in line:
+            matchString = pandoraSettings + '.root'
+            if matchString in line:
                 rootFiles.append(line)
     os.system('rm tmp.txt')
     return rootFiles

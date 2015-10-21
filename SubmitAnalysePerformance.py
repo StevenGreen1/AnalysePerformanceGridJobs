@@ -45,8 +45,8 @@ for eventSelection in eventsToSimulate:
 
         arguements = [
                        'runfile.txt',
-                       'AnalysePerformance_Default_DetectorModel_' + str(detModel) + '_Reco_Stage_' + str(recoVar) + '_' + eventType + '_' + str(energy) + 'GeV.root',
-                       'AnalysePerformance_Default_DetectorModel_' + str(detModel) + '_Reco_Stage_' + str(recoVar) + '_' + eventType + '_' + str(energy) + 'GeV.txt'
+                       'AnalysePerformance_PandoraSettings' + pandoraSettings + '_DetectorModel_' + str(detModel) + '_Reco_Stage_' + str(recoVar) + '_' + eventType + '_' + str(energy) + 'GeV.root',
+                       'AnalysePerformance_PandoraSettings' + pandoraSettings + '_DetectorModel_' + str(detModel) + '_Reco_Stage_' + str(recoVar) + '_' + eventType + '_' + str(energy) + 'GeV.txt'
                      ]
 
         outputFiles = arguements[1:]
@@ -54,7 +54,7 @@ for eventSelection in eventsToSimulate:
         genericApplication = GenericApplication()
         genericApplication.setScript('AnalysePerformance')
         genericApplication.setArguments(' '.join(arguements))
-        genericApplication.setDependency({"ROOT":"5.34"})
+        genericApplication.setDependency({'ROOT':'5.34'})
 
         job = UserJob()
         job.setJobGroup(JobIdentificationString)
@@ -63,7 +63,7 @@ for eventSelection in eventsToSimulate:
         job.setOutputData(outputFiles,OutputPath='/OptimisationStudies/AnalysePerformance/Detector_Model_' + str(detModel) + '/Reco_Stage_' + str(recoVar) + '/' + eventType + '/' + str(energy) + 'GeV')
 
         job.setName(JobIdentificationString)
-        job.setBannedSites(['LCG.IN2P3-CC.fr','LCG.IN2P3-IRES.fr','LCG.KEK.jp'])
+        job.setBannedSites(['LCG.IN2P3-CC.fr','LCG.IN2P3-IRES.fr','LCG.KEK.jp','OSG.CIT.us'])
         job.dontPromptMe()
         #job.setCPUTime(1000)
         res = job.append(genericApplication)
